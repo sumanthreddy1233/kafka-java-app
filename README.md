@@ -1,7 +1,7 @@
 # kafka-java-app
 
 ## Team Lead
-* Sumanth Reddy Naidu - [https://github.com/]
+* Sumanth Reddy Naidu - https://github.com/sumanthreddy1233
 
 ## Team Members
 * Sumana Reddy Reddybathula - https://github.com/sumana-reddy
