@@ -4,6 +4,7 @@
 * Sumanth Reddy Naidu - [https://github.com/]
 
 ## Team Members
-* Sumana Reddy Reddybathula-[https://github.com/sumana-reddy]
+* Sumana Reddy Reddybathula - https://github.com/sumana-reddy
+* Navya Devineni - https://github.com/navyadevineni
 
 
