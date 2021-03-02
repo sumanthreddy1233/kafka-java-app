@@ -10,6 +10,9 @@
 * Swaroopa Tirumalareddy - https://github.com/swaroopatirumalareddy
 * Krishna Sumanth Koyyalamudi - https://github.com/Krishna-Koyyalamudi
 
+## Individual Consumer-Producer Examples
+* Sumana Reddy: https://github.com/sumana-reddy/kafka-consumer-producer
+
 ## Sumana Producer-Consumer Compile and Build a Fat Jar File
 
 Open PowerShell as Administrator in the root project folder, compile the code using Maven and create an executable jar file. Generated artificacts can be found in the new 'target' folder.
