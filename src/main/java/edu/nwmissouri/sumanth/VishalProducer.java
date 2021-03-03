@@ -60,9 +60,9 @@ public class VishalProducer {
   }
 
   private static String createSentence() {
-    String[] resturants = { "Briyani pot", "Chiils", "Pizza hut", "Bawarachi" };
-    String[] items = { "Chicken Briyani", "Mutton Briyani", "Chicken Tikka Masala", "Kadai Chicken", "Karampodi Chicken" };
-    String[] price = { "60", "100", "200", "300","400" };
+    String[] student = { "Vishal Reddy", "Micheal", "Philip", "David" };
+    String[] profession = { "Software Engineer", "Doctor", "Pilot", "Politician", "Actor" };
+  
 
     Random r = new Random();
 
@@ -72,6 +72,6 @@ public class VishalProducer {
 
     int[] randoms = r.ints(count, minIndex, maxIndex).toArray();
 
-    return resturants[randoms[0]] + " " + items[randoms[1]] + " " + price[randoms[2]] + ".";
+    return student[randoms[0]] + " " + profession[randoms[1]] + ".";
   }
 }
