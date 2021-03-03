@@ -8,10 +8,8 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- * Created by sunilpatil on 12/28/15. Modified by Denise Case on 10/29/2019.
- */
-public class VishalProducer {
+
+public class KrishnaProducer {
   private static Scanner in;
 
   public static void main(String[] argv) throws Exception {
@@ -40,7 +38,7 @@ public class VishalProducer {
 
     
     for (int i = 1; i <= 10; i++) {
-      String message = createSentence();
+      String message = RandomSentence();
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
@@ -59,19 +57,16 @@ public class VishalProducer {
 
   }
 
-  private static String createSentence() {
+  private static String RandomSentence() {
     String[] student = { "Vishal Reddy", "Micheal", "Philip", "David" };
     String[] profession = { "Software Engineer", "Doctor", "Pilot", "Politician", "Actor" };
-  
-
     Random r = new Random();
-
     int count = 3;
     int minIndex = 0;
     int maxIndex = 4;
 
     int[] randoms = r.ints(count, minIndex, maxIndex).toArray();
 
-    return student[randoms[0]] + " " + profession[randoms[1]] + ".";
+    return student[randoms[0]]+" profession " + profession[randoms[1]];
   }
 }
