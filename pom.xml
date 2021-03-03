@@ -97,6 +97,7 @@
               <manifest>
                 <mainClass>edu.nwmissouri.sumanth.VishalProducer</mainClass>
                 <mainClass>edu.nwmissouri.sumanth.KrishnaProducer</mainClass>
+                <mainClass>edu.nwmissouri.sumanth.SumanthProducer</mainClass>
               </manifest>
             </archive>
             <descriptorRefs>
