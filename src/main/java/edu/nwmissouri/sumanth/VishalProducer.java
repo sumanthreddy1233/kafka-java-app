@@ -57,10 +57,9 @@ public class VishalProducer{
   }
 
   private static String createSentence() {
-    String[] accountType = { "Saving's Account", "Current Account", "Temporary Account", "Joint Account", "Permanent Account" };
-    String[] contains = { "has", "is", "will", "need to", "going to" };
-    String[] actionType = { "credit", "debit", "withdrawal", "deposit", "refund" };
-    String[] amount = { "$20,000", " $10,000", "5000 bugss", "$8000", "$15000" };
+    
+    String[] student = { "Vishal Reddy", "Micheal", "Philip", "David" };
+    String[] profession = { "Software Engineer", "Doctor", "Pilot", "Politician", "Actor" };
 
     Random r = new Random();
 
@@ -70,6 +69,6 @@ public class VishalProducer{
 
     int[] randoms = r.ints(count, minIndex, maxIndex).toArray();
 
-    return accountType[randoms[0]] + " holder " + contains[randoms[1]] + " " + actionType[randoms[2]] + " " + amount[randoms[1]]+ ".";
+    return student[randoms[0]] + " profession " + profession[randoms[1]] + ".";
   }
 }
