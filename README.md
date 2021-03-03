@@ -50,3 +50,24 @@ java -cp target/kafka-consumer-producer-1.0-SNAPSHOT-jar-with-dependencies.jar e
 ## Test Communications
 
 Verify messages are output by the Consumer.
+
+## Krishna Sumanth Koyyalamudi - https://github.com/Krishna-Koyyalamudi
+
+I have created various combinations of sandwich with different meat, cheese and veggie options using random generator for my custom producer package.
+
+### Commands for kafka environment
+* Open PowerShell in C:\kafka_2.13-2.7.0 folder.
+* Use a different PowerShell window for each process.
+
+Window 1 - Start Zookeeper Service
+```
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+```
+Window 2 - Start Kafka Service
+```
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+```
+Window 3 - Create your topic name
+```
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic krish-kafka
+```
