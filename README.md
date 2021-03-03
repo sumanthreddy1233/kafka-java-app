@@ -71,3 +71,17 @@ Window 3 - Create your topic name
 ```
 .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic krish-kafka
 ```
+* Open PowerShell as Administrator in your root project folder kafka-java-app folder
+  
+Window 4 - Compile and build the jar file
+```
+mvn clean compile assembly:single
+```
+Window 5 - Start Consumer
+```
+ java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.sumanth.Consumer krish-kafka group1
+```
+Window 6 - Start Producer
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.sumanth.KrishnaProducer krish-kafka
+```
