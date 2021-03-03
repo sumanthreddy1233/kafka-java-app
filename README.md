@@ -12,6 +12,7 @@
 
 ## Individual Consumer-Producer Examples
 * Sumana Reddy: https://github.com/sumana-reddy/kafka-consumer-producer
+* Navya Devineni: https://github.com/navyadevineni/kakfa-java
 
 ## Sumana Producer-Consumer Compile and Build a Fat Jar File
 
