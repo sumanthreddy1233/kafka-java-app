@@ -9,7 +9,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class VishalProducer {
+public class VishalProducer{
   private static Scanner in;
 
   public static void main(String[] argv) throws Exception {
@@ -36,9 +36,8 @@ public class VishalProducer {
 
     // Make our own messages - create your custom logic here
 
-    
     for (int i = 1; i <= 10; i++) {
-      String message = RandomSentence();
+      String message = createSentence();
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
@@ -57,16 +56,20 @@ public class VishalProducer {
 
   }
 
-  private static String RandomSentence() {
-    String[] student = { "Vishal Reddy", "Micheal", "Philip", "David" };
-    String[] profession = { "Software Engineer", "Doctor", "Pilot", "Politician", "Actor" };
+  private static String createSentence() {
+    String[] accountType = { "Saving's Account", "Current Account", "Temporary Account", "Joint Account", "Permanent Account" };
+    String[] contains = { "has", "is", "will", "need to", "going to" };
+    String[] actionType = { "credit", "debit", "withdrawal", "deposit", "refund" };
+    String[] amount = { "$20,000", " $10,000", "5000 bugss", "$8000", "$15000" };
+
     Random r = new Random();
-    int count = 3;
+
+    int count = 4;
     int minIndex = 0;
-    int maxIndex = 4;
+    int maxIndex = 5;
 
     int[] randoms = r.ints(count, minIndex, maxIndex).toArray();
 
-    return student[randoms[0]]+" profession " + profession[randoms[1]];
+    return accountType[randoms[0]] + " holder " + contains[randoms[1]] + " " + actionType[randoms[2]] + " " + amount[randoms[1]]+ ".";
   }
 }
