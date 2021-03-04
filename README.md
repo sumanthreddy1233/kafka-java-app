@@ -124,8 +124,9 @@ java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmiss
 ## Navya Devineni - Kafka Producer-Consumer commands 
 
 Commands I used to complete this assignment are:
+Open PoweShell window and run the below commands in separate windows
 
-- Start Zookeeper service:
+- Start Zookeeper service: 
 ```
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 ```
@@ -141,11 +142,11 @@ Commands I used to complete this assignment are:
 ```
 mvn clean compile assembly:single
 ```
-- Run the consumer class using the below command:
+- Start the consumer class using the below command:
 ```
 java -cp target/kafka-java-1.0-SNAPSHOT-jar-with-dependencies.jar com.nwmissouri.navyadevineni.Consumer producerconsumer-message group1
 ```
-- Run the producer class using the below command:
+- Start the producer class using the below command:
 ```
 java -cp target/kafka-java-1.0-SNAPSHOT-jar-with-dependencies.jar com.nwmissouri.navyadevineni.Producer producerconsumer-message
 ```
