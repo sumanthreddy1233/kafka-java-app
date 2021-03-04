@@ -122,9 +122,10 @@ java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmiss
 ```
 
 ## Navya Devineni - Kafka Producer-Consumer commands 
+Open PoweShell window and run the below commands in separate windows
+
 
 Commands I used to complete this assignment are:
-Open PoweShell window and run the below commands in separate windows
 
 - Start Zookeeper service: 
 ```
